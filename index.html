@@ -117,9 +117,15 @@
                         <li><span aria-hidden="true">🧡</span> Experiencias reales</li>
                         <li><span aria-hidden="true">🧡</span> Estrategias prácticas</li>
                     </ul>
-                    <a href="./assets/documents/Efecto Naranja Ebook.pdf" class="btn btn-download" download="Ebook-Efecto-Naranja-TDAH-Adultos.pdf">
+                    <a href="./assets/documents/Efecto Naranja Ebook.pdf" class="btn btn-download"
+                        download="Ebook-Efecto-Naranja-TDAH-Adultos.pdf" onclick="gtag('event', 'descarga_ebook', {
+     event_category: 'Descargas',
+     event_label: 'Ebook Efecto Naranja',
+     value: 1
+   });">
                         <i class="fas fa-download" aria-hidden="true"></i> Descargar eBook gratuito
                     </a>
+
                 </div>
             </div>
         </div>
@@ -189,6 +195,14 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8X3SLYC1L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-Q8X3SLYC1L');
+    </script>
 </body>
 
 </html>
