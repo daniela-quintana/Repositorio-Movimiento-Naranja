@@ -64,9 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-emailjs.init("sZaV0dP15gACQdARJ");
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contact-form");
 
