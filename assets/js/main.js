@@ -39,3 +39,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const downloadButton = document.getElementById("download-ebook");
+  if (downloadButton) {
+    downloadButton.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      let url = "./assets/documents/Efecto Naranja Ebook.pdf";
+
+      gtag("event", "descarga_ebook", {
+        event_category: "Descargas",
+        event_label: "Ebook Efecto Naranja",
+        value: 1,
+        event_callback: function () {
+          window.location.href = url;
+        },
+      });
+
+      setTimeout(function () {
+        window.location.href = url;
+      }, 1500);
+    });
+  }
+});
