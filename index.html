@@ -190,14 +190,18 @@
         </div>
     </footer>
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
             emailjs.init({
                 publicKey: "sZaV0dP15gACQdARJ",
             });
         })();
+    </script> -->
+
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
+    <script>
+        emailjs.init("sZaV0dP15gACQdARJ");
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8X3SLYC1L"></script>
     <script>
