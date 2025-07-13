@@ -63,3 +63,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+
+emailjs.init("sZaV0dP15gACQdARJ");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    emailjs
+      .sendForm("service_p2j42ac", "template_hog9k39", form)
+      .then(() => {
+        alert("Correo enviado con éxito, gracias!");
+        form.reset();
+      })
+      .catch((error) => {
+        alert("Error al enviar el correo: " + JSON.stringify(error));
+      });
+  });
+});

@@ -134,7 +134,8 @@
                 ¿Quieres unirte a la comunidad, colaborar o necesitas información? Escríbenos.
             </p>
 
-            <form class="contact-form">
+            <!-- Formulario conectado a EmailJS -->
+            <form id="contact-form" class="contact-form">
                 <div class="form-group">
                     <label for="name">Nombre</label>
                     <input type="text" id="name" name="name" required placeholder="Tu nombre">
@@ -191,6 +192,7 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/3.2/email.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8X3SLYC1L"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
