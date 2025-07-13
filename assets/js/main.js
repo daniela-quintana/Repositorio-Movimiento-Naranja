@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
 
     emailjs
-      .sendForm("service_p2j42ac", "template_hog9k39", form)
+      .sendForm("service_p2j42ac", "template_mluh9sa", form)
       .then(() => {
         alert("Correo enviado con éxito, gracias!");
         form.reset();
